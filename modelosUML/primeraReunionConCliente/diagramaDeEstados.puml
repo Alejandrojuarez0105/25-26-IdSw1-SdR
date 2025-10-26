@@ -1,0 +1,14 @@
+@startuml
+title Diagrama de Estados - Proceso de Planificación de Exámenes
+
+[*] --> SinPlanificar
+
+SinPlanificar --> GenerandoPropuesta : iniciar planificación
+GenerandoPropuesta --> ValidandoConflictos : propuesta generada
+ValidandoConflictos --> AjustandoFechas : conflictos detectados
+ValidandoConflictos --> Aprobado : sin conflictos
+AjustandoFechas --> ValidandoConflictos : revalidar
+Aprobado --> Publicado : plan final validado
+Publicado --> [*] : notificación enviada a alumnos y profesores
+
+@enduml
