@@ -1,0 +1,76 @@
+@startuml
+title Generador automático de calendario de exámenes (State Machine)
+hide empty description
+skinparam state {
+  BackgroundColor White
+  BorderColor #888
+  ArrowColor #555
+}
+[*] --> Inicio
+
+Inicio --> RecoleccionDatos : empezar()
+
+state RecoleccionDatos {
+  [*] --> ConectarBD
+  ConectarBD : entry/ leer credenciales
+  ConectarBD --> CargarAsignaturas : ok
+  ConectarBD --> ErrorConexion : fallo
+
+  CargarAsignaturas --> CargarHorariosProfes
+  CargarHorariosProfes --> CargarHistorialAulasFechas
+  CargarHistorialAulasFechas --> ValidarEntradas
+
+  ErrorConexion --> [*]
+
+  ValidarEntradas : do/ revisar formatos y duplicados
+  ValidarEntradas --> DatosCompletos : válidos
+  ValidarEntradas --> EsperandoDatos : faltan campos
+  EsperandoDatos --> ValidarEntradas : datos actualizados
+  DatosCompletos --> [*]
+}
+
+RecoleccionDatos --> PrepararSlots : datos listos
+
+state PrepararSlots {
+  [*] --> GenerarTurnos
+  GenerarTurnos : entry/ priorizar por grado\n1º→08:30 | 2º→11:30 | 3º→14:30 | 4º→17:30
+  GenerarTurnos --> GenerarCapacidadAulas
+  GenerarCapacidadAulas : do/ consultar disponibilidad y capacidad
+  GenerarCapacidadAulas --> [*]
+}
+
+PrepararSlots --> Asignacion
+
+state Asignacion {
+  [*] --> AsignarExamen
+  AsignarExamen : do/ elegir fecha-hora-aula\nsegún turno del grado
+
+  AsignarExamen --> VerificarRestricciones : asignado
+
+  state VerificarRestricciones {
+    [*] --> Reglas
+    Reglas : do/\n- ningún alumno con 2 exámenes el mismo día\n- profe disponible\n- aula libre y con capacidad\n- sin solapes por grado/turno
+    Reglas --> OK : [cumple]
+    Reglas --> Violacion : [no cumple]
+    OK --> [*]
+    Violacion --> [*]
+  }
+
+  VerificarRestricciones --> ResolverConflictos : Violacion
+  VerificarRestricciones --> [*] : OK
+
+  ResolverConflictos : do/ reubicar\n(cambiar aula/fecha/turno)
+  ResolverConflictos --> AsignarExamen
+}
+
+Asignacion --> GenerarCalendario : todos OK
+GenerarCalendario : do/ construir agenda final (PDF/CSV/API)
+
+GenerarCalendario --> Publicacion
+Publicacion : do/ notificar a alumnos y profesores
+Publicacion --> [*] : publicado
+Publicacion --> Replanificacion : feedback(cliente)
+Replanificacion : do/ aplicar cambios solicitados
+Replanificacion --> Asignacion
+
+@enduml
