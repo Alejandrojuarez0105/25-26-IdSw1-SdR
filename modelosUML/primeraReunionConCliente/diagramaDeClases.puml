@@ -2,55 +2,53 @@
 title Diagrama de Clases - Sistema de Asignación de Exámenes
 
 class Universidad {
-  -nombre : String
-  +getGrados() : List<Grado>
+    
+}
+
+class Facultad {
+    
 }
 
 class Grado {
-  -nombre : String
-  -nivel : int
-  +getCursos() : List<Curso>
-  +getAlumnos() : List<Alumno>
+   
 }
 
-class Curso {
-  -codigo : String
-  -nombre : String
-  +getExamenes() : List<Examen>
-}
-
-class Alumno {
-  -matricula : String
-  -nombre : String
-  +getCursos() : List<Curso>
+class Materia {
+   
 }
 
 class Profesor {
-  -idProfesor : String
-  -nombre : String
-  +proponerExamen() : void
+    
+    
+}
+
+class Alumno {
+  
 }
 
 class Examen {
-  -fecha : Date
-  -hora : Time
-  -duracion : int
-  -aula : String
-  +validarDisponibilidad() : boolean
+    
+
 }
 
-class SistemaPlanificacion {
-  +generarCalendario() : void
-  +verificarConflictos() : boolean
-  +asignarFechas() : void
+class Aula {
+   
 }
 
-Universidad "1" --> "many" Grado
-Grado "1" --> "many" Curso
-Grado "1" --> "many" Alumno
-Curso "1" --> "many" Examen
-Curso "many" --> "many" Alumno : "inscripción"
-Curso "1" --> "many" Profesor
-SistemaPlanificacion "1" --> "many" Examen : "asigna"
+class PlanificadorExamenes {
+  
+}
+
+Universidad "1" -- "cuenta" Facultad
+Facultad "1" -- "tiene" Grado
+Grado "1" -- "tiene" Materia
+Grado "1" -- "many" Alumno
+Materia "1" -- "presentan" Examen
+Profesor "1" -- "imparten" Materia
+Examen "many" -- "presentan" Alumno
+Examen "1" --> "1" Aula
+PlanificadorExamenes ..> Examen : gestiona >
+PlanificadorExamenes ..> Alumno : valida >
+PlanificadorExamenes ..> Materia : planifica >
 
 @enduml
