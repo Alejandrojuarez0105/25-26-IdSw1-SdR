@@ -13,3 +13,9 @@ Tenemos que conectar una base de datos que contenga la información de las asign
 Como se comentó con nuestro cliente, el sistema actual es completamente manual. También tenemos la posibilidad de usar el historial de aulas y fechas de los años anteriores. 
 - El cliente no tiene preferencia por ningún lenguaje de programación; el sistema debe ser totalmente automático, incluyendo la recopilación de datos y la generación del calendario. 
 
+---
+## Modelo del dominio 
+![Diagrama](/images/modelosUML/DiagramaPrimeraReunion.svg)
+
+
+
