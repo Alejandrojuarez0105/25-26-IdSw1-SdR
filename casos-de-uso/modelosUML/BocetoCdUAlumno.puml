@@ -1,0 +1,14 @@
+@startuml CdU_Alumno
+left to right direction
+
+actor Alumno
+
+package "Consulta de Exámenes" {
+    usecase "Ver Calendario de Exámenes" as VerCalendario
+    usecase "Descargar Calendario" as DescargarCalendario
+}
+
+Alumno --> VerCalendario
+Alumno --> DescargarCalendario
+
+@enduml

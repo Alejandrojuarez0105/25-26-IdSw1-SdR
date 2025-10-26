@@ -1,0 +1,13 @@
+@startuml
+
+[*] --> SinProgramar
+
+SinProgramar --> EnGeneracion : generar()
+EnGeneracion --> Programado : asignarFechaYHora()
+Programado --> Verificado : verificarConflictos()
+Verificado --> Publicado : publicar()
+Publicado --> [*]
+
+EnGeneracion --> SinProgramar : cancelar()
+Programado --> SinProgramar : eliminar()
+@enduml
