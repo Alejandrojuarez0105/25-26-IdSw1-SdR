@@ -1,31 +1,5 @@
 @startuml
 
-Class Examen{
-  fecha;
-  hora;
-  convocatoria;
-}
-
-Class Grado{
-  nombre
-}
-
-Class Aula{
-  codigo;
-  capacidad;
-}
-
-Class CursoAcademico{
-  numero
-}
-
-Class Asignatura{
-  nombre
-}
-
-Class Turno{
-  horainicio
-}
 
 CalendarioExamen -- Examen: tiene 
 CalendarioExamen -- Grado: incluye

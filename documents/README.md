@@ -15,7 +15,8 @@ Como se comentó con nuestro cliente, el sistema actual es completamente manual.
 
 ---
 ## Modelo del dominio 
-![Diagrama](/images/modelosUML/DiagramaPrimeraReunion.svg)
+### Diagrama de Clases 
+![Diagrama de Clase ](/images/modelosUML/diagramaDeClasePrimeraReunion.svg)
 
 
 
