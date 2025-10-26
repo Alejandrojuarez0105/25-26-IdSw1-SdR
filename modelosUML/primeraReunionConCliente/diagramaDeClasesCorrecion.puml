@@ -1,0 +1,74 @@
+@startuml
+title Diagrama de Clases - Sistema de Asignación de Exámenes
+
+class Universidad {
+    - nombre 
+    - facultades 
+}
+
+class Facultad {
+    - nombre 
+    - grados 
+}
+
+class Grado {
+    - nombre 
+    - materias 
+    - alumnos 
+}
+
+class Materia {
+    - codigo 
+    - nombre 
+    - profesor 
+    - examenes 
+}
+
+class Profesor {
+    
+    - nombre
+    - correo 
+}
+
+class Alumno {
+    
+    - nombre 
+    - matricula 
+    - grado 
+}
+
+class Examen {
+    
+    - fecha 
+    - horaInicio 
+    - horaFin 
+    - aula 
+    - materia 
+    - alumnosAsignados 
+}
+
+class Aula {
+    - codigo 
+    - capacidad 
+}
+
+class PlanificadorExamenes {
+    + generarHorarios()
+    + validarConflictosAlumno()
+    + validarConflictosMateria()
+    + asignarFechas()
+}
+
+Universidad "1" -- "cuenta" Facultad
+Facultad "1" -- "tiene" Grado
+Grado "1" -- "tiene" Materia
+Grado "1" -- "many" Alumno
+Materia "1" -- "presentan" Examen
+Profesor "1" -- "imparten" Materia
+Examen "many" -- "presentan" Alumno
+Examen "1" --> "1" Aula
+PlanificadorExamenes ..> Examen : gestiona >
+PlanificadorExamenes ..> Alumno : valida >
+PlanificadorExamenes ..> Materia : planifica >
+
+@enduml
