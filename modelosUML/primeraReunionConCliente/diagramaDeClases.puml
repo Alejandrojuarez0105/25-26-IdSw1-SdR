@@ -1,0 +1,56 @@
+@startuml
+title Diagrama de Clases - Sistema de Asignación de Exámenes
+
+class Universidad {
+  -nombre : String
+  +getGrados() : List<Grado>
+}
+
+class Grado {
+  -nombre : String
+  -nivel : int
+  +getCursos() : List<Curso>
+  +getAlumnos() : List<Alumno>
+}
+
+class Curso {
+  -codigo : String
+  -nombre : String
+  +getExamenes() : List<Examen>
+}
+
+class Alumno {
+  -matricula : String
+  -nombre : String
+  +getCursos() : List<Curso>
+}
+
+class Profesor {
+  -idProfesor : String
+  -nombre : String
+  +proponerExamen() : void
+}
+
+class Examen {
+  -fecha : Date
+  -hora : Time
+  -duracion : int
+  -aula : String
+  +validarDisponibilidad() : boolean
+}
+
+class SistemaPlanificacion {
+  +generarCalendario() : void
+  +verificarConflictos() : boolean
+  +asignarFechas() : void
+}
+
+Universidad "1" --> "many" Grado
+Grado "1" --> "many" Curso
+Grado "1" --> "many" Alumno
+Curso "1" --> "many" Examen
+Curso "many" --> "many" Alumno : "inscripción"
+Curso "1" --> "many" Profesor
+SistemaPlanificacion "1" --> "many" Examen : "asigna"
+
+@enduml

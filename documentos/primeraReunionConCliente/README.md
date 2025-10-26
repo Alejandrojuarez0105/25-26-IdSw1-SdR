@@ -1,0 +1,1 @@
+El cliente quiere un sistema de una plataforma de una universidad en donde según la base de datos de la universidad dividida en sus grados, determine y asigne las fechas de los exámenes cuidando que ninguna materia presente los exámenes a la misma hora ni que los alumnos tengan mas de un examen el mismo día.
