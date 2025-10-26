@@ -1,0 +1,52 @@
+@startuml
+title Diagrama de Objetos - Ejemplo de Instancias del Sistema
+
+object universidad1 {
+    nombre = "Universidad Europea del Atlantico"
+}
+
+object facultad1 {
+    nombre = "Facultad de x"
+}
+
+object grado1 {
+    nombre = "Ingeniería Informática"
+}
+
+object materia1 {
+    codigo = "INF101"
+    nombre = "Programación I"
+}
+
+object profesor1 {
+    
+    nombre = "Dr. Manuel Masias"
+}
+
+object alumno1 {
+    
+    nombre = "Chuchito"
+}
+
+object examen1 {
+    
+    fecha = "2025-06-10"
+    horaInicio = "09:00"
+    horaFin = "11:00"
+}
+
+object aula1 {
+    codigo = "A-203"
+    capacidad = 40
+}
+
+universidad1 -- facultad1
+facultad1 -- grado1
+grado1 -- materia1
+grado1 -- alumno1
+materia1 -- profesor1
+materia1 -- examen1
+examen1 -- aula1
+examen1 -- alumno1
+
+@enduml
