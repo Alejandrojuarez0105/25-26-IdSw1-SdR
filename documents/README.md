@@ -20,6 +20,9 @@ Como se comentó con nuestro cliente, el sistema actual es completamente manual.
 ---
 ### Diagrama de Estados 
 ![Diagrama de Estados ](/images/modelosUML/diagramaDeEstadosPrimeraReunion.svg)
+---
+### Diagrama de Objetos
+![Diagrama de Objetos ](/images/modelosUML/diagramaDeObjetosPrimeraReunion.svg)
 
 
 

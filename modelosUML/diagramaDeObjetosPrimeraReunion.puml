@@ -1,0 +1,51 @@
+@startuml
+title Diagrama de objetos simplificado – Generador de Exámenes
+
+skinparam object {
+  BorderColor #666
+  BackgroundColor #fff
+}
+
+' ==== OBJETOS PRINCIPALES ====
+
+object "CalendarioExamen calendario1" as cal {
+  periodo = "2025-2026"
+}
+
+object "Grado grado1" as g1 {
+  nombre = "4º año"
+}
+
+object "Asignatura asign1" as asig {
+  nombre = "Programación Web I"
+}
+
+object "Examen examen1" as ex {
+  fecha = "2026-01-10"
+  hora = "17:30"
+}
+
+object "Aula aula1" as aula {
+  nombre = "Aula 101"
+  capacidad = 60
+}
+
+object "Alumno alumno1" as alum {
+  nombre = "Manuela"
+}
+
+object "Vigilante vig1" as vig {
+  nombre = "Profesor Pérez"
+}
+
+
+' ==== RELACIONES SIMPLES ====
+
+cal -- g1 : incluye
+g1 -- asig : contiene
+asig -- ex : tiene
+ex -- aula : se_realiza_en
+ex -- vig : vigilado_por
+alum -- ex : realiza
+
+@enduml
