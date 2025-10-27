@@ -25,6 +25,7 @@ object asignatura1 {
   tipo = "Obligatoria"
   grado = "Ingeniería Informática"
   año = "3.º"
+  semestre = "1ro"
 }
 
 object profesor1 {
