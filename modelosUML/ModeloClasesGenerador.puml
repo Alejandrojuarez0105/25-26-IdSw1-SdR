@@ -1,0 +1,70 @@
+@startuml DiagramaClasesGeneradorExamenes
+
+class SistemaGeneradorExamenes {
+}
+
+class Universidad {
+}
+
+class BaseDeDatos {
+}
+
+class Asignatura {
+}
+
+class Profesor {
+}
+
+class Aula {
+}
+
+class Examen {
+}
+
+class Alumno {
+}
+
+class CalendarioExamenes {
+}
+
+class GeneradorFechas {
+}
+
+class VerificadorConflictos {
+}
+
+class FranjaHoraria {
+}
+
+class PeriodoExamenes {
+}
+
+SistemaGeneradorExamenes --> Universidad : tiene
+SistemaGeneradorExamenes --> CalendarioExamenes : tiene
+SistemaGeneradorExamenes --> GeneradorFechas : tiene
+SistemaGeneradorExamenes --> VerificadorConflictos : tiene
+
+Universidad --> BaseDeDatos : tiene
+Universidad --> PeriodoExamenes : tiene
+Universidad --> Asignatura : tiene
+Universidad --> Profesor : tiene
+Universidad --> Aula : tiene
+Universidad --> Alumno : tiene
+
+Asignatura --> Profesor : impartida por
+Asignatura --> Examen : tiene
+
+Aula --> Examen : aloja
+
+Examen --> Asignatura : evalúa
+Examen --> Profesor : supervisado por
+Examen --> Aula : se realiza en
+Examen --> FranjaHoraria : programado en
+
+CalendarioExamenes --> Examen : contiene
+
+GeneradorFechas --> FranjaHoraria : gestiona
+
+Alumno --> Asignatura : matriculado en
+
+@enduml
