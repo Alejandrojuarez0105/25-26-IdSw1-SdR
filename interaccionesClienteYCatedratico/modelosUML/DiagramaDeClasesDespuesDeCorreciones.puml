@@ -1,0 +1,28 @@
+@startuml
+
+class Universidad
+class Facultad
+class Grado
+class Asignatura
+class Profesor
+class Alumno
+class Aula
+class Examen
+
+Universidad *-- Facultad
+Facultad *-- Grado
+Grado *-- Asignatura
+
+Asignatura *--* Profesor
+Asignatura *-- Alumno
+
+Asignatura *-- Examen
+
+Asignatura *-- Examen
+Examen --> Aula
+Examen --> Profesor : supervisado por
+Examen *--* Alumno : tomado por
+
+
+hide empty members
+@enduml
