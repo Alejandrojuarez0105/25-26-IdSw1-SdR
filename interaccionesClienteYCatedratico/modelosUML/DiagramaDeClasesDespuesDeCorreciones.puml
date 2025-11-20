@@ -8,20 +8,21 @@ class Profesor
 class Alumno
 class Aula
 class Examen
+class FranjaHoraria
 
-Universidad *-- Facultad
-Facultad *-- Grado
-Grado *-- Asignatura
+Universidad *-- Facultad : tiene
+Facultad *-- Grado : tiene
+Grado *-- Asignatura : tiene
 
-Asignatura *--* Profesor
-Asignatura *-- Alumno
+Asignatura *--* Profesor : tiene
+Asignatura *-- Alumno : tiene matriculados
 
-Asignatura *-- Examen
+Asignatura *-- Examen : tiene
 
-Asignatura *-- Examen
-Examen --> Aula
+Examen --> Aula : se realiza en
 Examen --> Profesor : supervisado por
-Examen *--* Alumno : tomado por
+Examen --> FranjaHoraria : tiene
+Examen *--* Alumno : realizado por
 
 
 hide empty members
