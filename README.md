@@ -5,7 +5,6 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR)
 [![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow)](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/issues)
-[![Estrellas](https://img.shields.io/github/stars/Alejandrojuarez0105/25-26-IdSw1-SdR?style=social)](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/stargazers)
 
 **[🏠 Inicio](#-sistema-de-generación-automática-de-exámenes) • [👥 Equipo](#-equipo-de-desarrollo) • [🎯 Objetivo](#-objetivo-del-proyecto) • [⚙️ Funcionalidades](#️-funcionalidades-principales) • [🛠️ Tecnologías](#️-tecnologías-utilizadas)**
 
@@ -31,10 +30,10 @@ Este proyecto forma parte de la asignatura **Ingeniería del Software I** y cons
 | Nombre | Rol | GitHub |
 |--------|-----|--------|
 | **Alejandro Juárez** | Coordinador del Proyecto | [@Alejandrojuarez0105](https://github.com/Alejandrojuarez0105) |
-| **Rubén Tresgallo** | Desarrollador | [@rubentresgallob] | (https://github.com/rubentresgallob)
-| **Francisco Venero** | Desarrollador | [@franvenero] | (https://github.com/franvenero)
-| **Manuela Grizoni** | Desarrolladora | [@ManuelaGrzoni] | (https://github.com/ManuelaGrzoni)
-| **Vivian Chao** | Desarrolladora | [@VivianChaoPeraza] | (https://github.com/VivianChaoPeraza)
+| **Rubén Tresgallo** | Desarrollador | [@rubentresgallob](https://github.com/rubentresgallob) |
+| **Francisco Venero** | Desarrollador | [@franvenero](https://github.com/franvenero) |
+| **Manuela Grizoni** | Desarrolladora | [@ManuelaGrzoni](https://github.com/ManuelaGrzoni) |
+| **Vivian Chao** | Desarrolladora | [@VivianChaoPeraza](https://github.com/VivianChaoPeraza) |
 
 ---
 
