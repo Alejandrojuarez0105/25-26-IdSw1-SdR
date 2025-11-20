@@ -1,0 +1,10 @@
+@startuml
+
+[*] --> SinAsignar
+
+SinAsignar --> Examen : iniciarAsignación()
+Examen --> Asignado : asignarFecha()
+
+Asignado --> [*]
+
+@enduml
