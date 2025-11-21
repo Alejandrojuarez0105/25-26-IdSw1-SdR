@@ -92,7 +92,7 @@ El sistema asigna automáticamente los siguientes elementos:
 | Sección | Enlace | Estado |
 |---------|--------|--------|
 | 📊 **Modelos del Dominio** | [`/modelosUML`](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/interaccionesClienteYCatedratico/images/DiagramaDeClasesDespuesDeCorreciones.png) | ✅ Disponible |
-| 📋 **Casos de Uso** | [`/documents/l'Rubrica.CdU.md`](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/tree/main/documents) | ✅ Disponible |
+| 📋 **Casos de Uso** | [`/documents/l'Rubrica.CdU.md`](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/tree/juarezAlejandro/casos-de-uso/images) | ✅ Disponible |
 | 🎨 **Interfaz** | `/src/interface` | 🔜 Próximamente |
 | 📚 **Documentación** | [`/documents`](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/tree/main/documents) | ✅ Disponible |
 | 💻 **Código Fuente** | `/src` | 🔜 Próximamente |
