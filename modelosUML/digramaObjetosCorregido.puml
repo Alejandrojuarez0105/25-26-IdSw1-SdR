@@ -1,108 +1,63 @@
 @startuml
 title diagramaDeObjetosCorregido
 
-object universidad {
+object Universidad {
   nombre = "Uneatlantico"
 }
 
-object facInformatica {
-  nombre = "Ingeniería Informática"
+object Facultad {
+  nombre = "Politecnica superior"
 }
 
-object gradoInformatica {
+object Grado {
   nombre = "3º grado"
 }
 
-object asigBD {
-  nombre = "Bases de Datos"
-  codigo = "BD101"
+object Asignatura {
+  nombre = "Ingeniería de Software"
+  codigo = "IDSW1"
 }
 
-object asigProg {
-  nombre = "Programación I"
-  codigo = "PRG101"
-}
-
-object examenBDJunio {
+object Examen{
+    asignatura = "Ingeniería de Software"
   tipo = "Final"
   fecha = "2025-06-10"
 }
 
-object examenProgJunio {
-  tipo = "Final"
-  fecha = "2025-06-05"
-}
 
-object profLazaro {
-  nombre = "Lázaro Hernández"
-}
-
-object profMasias {
+object Profesor {
   nombre = "Manuel Masías"
 }
 
-object franjaManana {
-  descripcion = "08:00 - 10:00"
+object FranjaHoraria{
+  descripcion = "08:30 - 10:30"
 }
 
-object franjaTarde {
-  descripcion = "17:00 - 19:00"
-}
 
-object aula1 {
+object Aula {
   codigo = "Aula -2.6"
   capacidad = 50
 }
 
-object aula2 {
-  codigo = "Aula -2.4"
-  capacidad = 80
+
+object Alumno {
+    cantidadAlumno = 50
 }
 
-object alumnoAna {
-  nombre = "Ana"
-  nia = "A001"
-}
 
-object alumnoLuis {
-  nombre = "Luis"
-  nia = "L002"
-}
+Universidad -- Facultad : tiene >
+Facultad -- Grado : tiene >
+Grado-- Asignatura : tiene >
 
-object alumnoMarta {
-  nombre = "Marta"
-  nia = "M003"
-}
+Asignatura -- Examen: tiene >
 
-universidad -- facInformatica : tiene >
-facInformatica -- gradoInformatica : tiene >
-gradoInformatica -- asigBD : tiene >
-gradoInformatica -- asigProg : tiene >
+Asignatura -- Profesor : impartida por >
+Asignatura -- Alumno : tiene matriculados >
 
-asigBD -- examenBDJunio : tiene >
-asigProg -- examenProgJunio : tiene >
+Examen -- FranjaHoraria : tiene >
+Examen -- Aula : se realiza en >
+Examen -- Profesor : supervisado por >
+Examen -- Alumno : realizado por >
 
-
-asigBD -- profLazaro : impartida por >
-asigProg -- profMasias : impartida por >
-
-
-asigBD -- alumnoAna : matriculado >
-asigBD -- alumnoLuis : matriculado >
-asigProg -- alumnoLuis : matriculado >
-asigProg -- alumnoMarta : matriculado >
-
-
-examenBDJunio -- franjaManana : tiene >
-examenBDJunio -- aula1 : se realiza en >
-examenBDJunio -- profLazaro : supervisado por >
-examenBDJunio -- alumnoAna : realizado por >
-examenBDJunio -- alumnoLuis : realizado por >
-
-examenProgJunio -- franjaTarde : tiene >
-examenProgJunio -- aula2 : se realiza en >
-examenProgJunio -- profMasias : supervisado por >
-examenProgJunio -- alumnoLuis : realizado por >
-examenProgJunio -- alumnoMarta : realizado por >
 
 @enduml
