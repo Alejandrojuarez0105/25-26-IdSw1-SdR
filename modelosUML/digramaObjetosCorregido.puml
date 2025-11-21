@@ -1,0 +1,108 @@
+@startuml
+title diagramaDeObjetosCorregido
+
+object universidad {
+  nombre = "Uneatlantico"
+}
+
+object facInformatica {
+  nombre = "Ingeniería Informática"
+}
+
+object gradoInformatica {
+  nombre = "3º grado"
+}
+
+object asigBD {
+  nombre = "Bases de Datos"
+  codigo = "BD101"
+}
+
+object asigProg {
+  nombre = "Programación I"
+  codigo = "PRG101"
+}
+
+object examenBDJunio {
+  tipo = "Final"
+  fecha = "2025-06-10"
+}
+
+object examenProgJunio {
+  tipo = "Final"
+  fecha = "2025-06-05"
+}
+
+object profLazaro {
+  nombre = "Lázaro Hernández"
+}
+
+object profMasias {
+  nombre = "Manuel Masías"
+}
+
+object franjaManana {
+  descripcion = "08:00 - 10:00"
+}
+
+object franjaTarde {
+  descripcion = "17:00 - 19:00"
+}
+
+object aula1 {
+  codigo = "Aula -2.6"
+  capacidad = 50
+}
+
+object aula2 {
+  codigo = "Aula -2.4"
+  capacidad = 80
+}
+
+object alumnoAna {
+  nombre = "Ana"
+  nia = "A001"
+}
+
+object alumnoLuis {
+  nombre = "Luis"
+  nia = "L002"
+}
+
+object alumnoMarta {
+  nombre = "Marta"
+  nia = "M003"
+}
+
+universidad -- facInformatica : tiene >
+facInformatica -- gradoInformatica : tiene >
+gradoInformatica -- asigBD : tiene >
+gradoInformatica -- asigProg : tiene >
+
+asigBD -- examenBDJunio : tiene >
+asigProg -- examenProgJunio : tiene >
+
+
+asigBD -- profLazaro : impartida por >
+asigProg -- profMasias : impartida por >
+
+
+asigBD -- alumnoAna : matriculado >
+asigBD -- alumnoLuis : matriculado >
+asigProg -- alumnoLuis : matriculado >
+asigProg -- alumnoMarta : matriculado >
+
+
+examenBDJunio -- franjaManana : tiene >
+examenBDJunio -- aula1 : se realiza en >
+examenBDJunio -- profLazaro : supervisado por >
+examenBDJunio -- alumnoAna : realizado por >
+examenBDJunio -- alumnoLuis : realizado por >
+
+examenProgJunio -- franjaTarde : tiene >
+examenProgJunio -- aula2 : se realiza en >
+examenProgJunio -- profMasias : supervisado por >
+examenProgJunio -- alumnoLuis : realizado por >
+examenProgJunio -- alumnoMarta : realizado por >
+
+@enduml
