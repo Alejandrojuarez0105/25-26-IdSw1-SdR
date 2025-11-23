@@ -1,14 +1,21 @@
+<div align=right>
+
+[![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=github&logoColor=black)](#-sistema-de-generación-automática-de-exámenes)
+[![](https://img.shields.io/badge/-Primera_Reunión-FFF?style=flat&logo=googlemeet&logoColor=black)](/documents/primeraReunion/primeraReunion.md)
+[![](https://img.shields.io/badge/-Modelo_del_Dominio-FFF?style=flat&logo=diagramsdotnet&logoColor=black)](/modelosUML)
+[![](https://img.shields.io/badge/-Casos_de_Uso-FFF?style=flat&logo=readthedocs&logoColor=black)](#)
+[![](https://img.shields.io/badge/-Diagrama_de_Clases-FFF?style=flat&logo=uml&logoColor=black)](/images/modelosUML)
+[![](https://img.shields.io/badge/-Documentación-FFF?style=flat&logo=bookstack&logoColor=black)](/documents)
+[![](https://img.shields.io/badge/-Issues-FFF?style=flat&logo=github&logoColor=black)](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/issues)
+
+</div>
+
 # 📚 Sistema de Generación Automática de Exámenes
 ### Universidad Europea del Atlántico (UNEATLANTICO)
 
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR)
-[![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow)](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/issues)
-
-**[🏠 Inicio](#-sistema-de-generación-automática-de-exámenes) • [👥 Equipo](#-equipo-de-desarrollo) • [🎯 Objetivo](#-objetivo-del-proyecto) • [⚙️ Funcionalidades](#️-funcionalidades-principales) • [🛠️ Tecnologías](#️-tecnologías-utilizadas)**
-
-</div>
+![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow)
+![Curso](https://img.shields.io/badge/Curso-2025--2026-green)
+![Grupo](https://img.shields.io/badge/Grupo-5-orange)
 
 ---
 
@@ -16,7 +23,7 @@
 
 El **Sistema de Generación Automática de Exámenes** es una solución desarrollada para la Universidad Europea del Atlántico que automatiza la planificación y asignación de fechas, horarios y aulas para los exámenes finales. El sistema elimina conflictos de horarios y optimiza el uso de los recursos disponibles.
 
-Este proyecto forma parte de la asignatura **Ingeniería del Software I** y constituye un caso real de desarrollo de software con aplicación práctica en la gestión académica universitaria
+Este proyecto forma parte de la asignatura **Ingeniería del Software I** y constituye un caso real de desarrollo de software con aplicación práctica en la gestión académica universitaria.
 
 ---
 
@@ -41,37 +48,37 @@ Este proyecto forma parte de la asignatura **Ingeniería del Software I** y cons
 
 Desarrollar un sistema automatizado que:
 
-- ✅ **Genere calendarios de exámenes** de forma automática
-- ✅ **Asigne recursos óptimamente** (aulas, horarios, profesores)
-- ✅ **Evite conflictos** de horarios entre profesores y aulas
-- ✅ **Reduzca tiempo** de planificación manual
-- ✅ **Garantice transparencia** en la asignación de exámenes
-- ✅ **Facilite la gestión** académica de la universidad
+-  Genere calendarios de exámenes de forma automática
+-  Asigne recursos óptimamente (aulas, horarios, profesores)
+-  Evite conflictos de horarios entre profesores y aulas
+-  Reduzca el tiempo de planificación manual
+-  Garantice transparencia en la asignación de exámenes
+-  Facilite la gestión académica de la universidad
 
 ---
 
 ## ⚙️ Funcionalidades Principales
 
-### 🔹 Asignación Automática
+### Asignación Automática
 
 El sistema asigna automáticamente los siguientes elementos:
 
 | Elemento | Descripción |
 |----------|-------------|
-| 📖 **Asignaturas** | Código y nombre de cada asignatura |
-| 👨‍🏫 **Profesores** | Asignación de profesores responsables |
-| 📅 **Fechas** | Programación de fechas de exámenes |
-| ⏰ **Franjas Horarias** | Asignación en horarios específicos |
-| 🏛️ **Aulas** | Selección de aulas según capacidad |
+|  **Asignaturas** | Código y nombre de cada asignatura |
+|  **Profesores** | Asignación de profesores responsables |
+|  **Fechas** | Programación de fechas de exámenes |
+|  **Franjas Horarias** | Asignación en horarios específicos |
+|  **Aulas** | Selección de aulas según capacidad |
 
-### 🔹 Gestión de Conflictos
+### Gestión de Conflictos
 
 - **Sin solapamientos**: Garantiza que un profesor no tenga dos exámenes simultáneos
 - **Optimización de aulas**: Asigna aulas según capacidad requerida
 - **Distribución equitativa**: Balance en la carga de exámenes por día
 - **Validación automática**: Verificación de restricciones en tiempo real
 
-### 🕐 Franjas Horarias Disponibles
+### Franjas Horarias Disponibles
 
 ```
 ┌─────────────────┬──────────────┐
@@ -86,38 +93,32 @@ El sistema asigna automáticamente los siguientes elementos:
 
 ---
 
-
-### 🔗 Enlaces Rápidos
-
-| Sección | Enlace | Estado |
-|---------|--------|--------|
-| 📊 **Modelos del Dominio** | [`/modelosUML`](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/interaccionesClienteYCatedratico/images/DiagramaDeClasesDespuesDeCorreciones.png) | ✅ Disponible |
-| 📋 **Casos de Uso** | [`/documents/l'Rubrica.CdU.md`](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/tree/juarezAlejandro/casos-de-uso/images) | ✅ Disponible |
-| 🎨 **Interfaz** | `/src/interface` | 🔜 Próximamente |
-| 📚 **Documentación** | [`/documents`](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/tree/main/documents) | ✅ Disponible |
-| 💻 **Código Fuente** | `/src` | 🔜 Próximamente |
-| 🖼️ **Diagramas UML** | [`/images/modelosUML`](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/tree/main/images/modelosUML) | ✅ Disponible |
-
----
-
 ## 🛠️ Tecnologías Utilizadas
-
-<div align="center">
 
 | Categoría | Tecnologías |
 |-----------|-------------|
-| 📦 **Control de Versiones** | GitHub |
-| 📋 **Gestión de Tareas** | GitHub Issues, GitHub Projects |
-| 📝 **Documentación** | Markdown, Diagramas UML |
-| 💻 **Desarrollo** | 🔜 Por definir en fases posteriores |
+|  **Control de Versiones** | GitHub |
+|  **Gestión de Tareas** | GitHub Issues, GitHub Projects |
+|  **Documentación** | Markdown, Diagramas UML |
 
-</div>
 
 ---
 
-## 📞 Contacto y Enlaces
+## 📁 Estructura del Repositorio
 
-<div align="center">
+```
+25-26-IdSw1-SdR/
+├── documents/           # Documentación del proyecto
+│   └── primeraReunion/  # Actas de reuniones
+├── images/              # Imágenes y recursos gráficos
+│   └── modelosUML/      # Diagramas UML
+├── modelosUML/          # Modelos del dominio
+└── README.md            # Este archivo
+```
+
+---
+
+## 📞 Contacto
 
 | Rol | Nombre | Enlace |
 |-----|--------|--------|
@@ -128,20 +129,10 @@ El sistema asigna automáticamente los siguientes elementos:
 **Asignatura**: Ingeniería del Software I  
 **Universidad**: Universidad Europea del Atlántico (UNEATLANTICO)
 
-</div>
-
 ---
 
 <div align="center">
 
-**[⬆ Volver arriba](#-sistema-de-generación-automática-de-exámenes)**
-
----
-
 Desarrollado por el Equipo 5 - UNEATLANTICO 2025-2026
-
-![UNEATLANTICO](https://img.shields.io/badge/UNEATLANTICO-Ingeniería%20del%20Software%20I-blue)
-![Curso](https://img.shields.io/badge/Curso-2025--2026-green)
-![Grupo](https://img.shields.io/badge/Grupo-5-orange)
 
 </div>
