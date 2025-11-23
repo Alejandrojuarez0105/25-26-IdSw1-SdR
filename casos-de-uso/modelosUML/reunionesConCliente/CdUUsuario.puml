@@ -1,0 +1,18 @@
+@startuml CdU_Usuario
+left to right direction
+
+actor Usuario
+
+usecase "Generar Calendario de Exámenes" as GenerarCalendario
+usecase "Verificar Conflictos de Exámenes Con Incidencias de Profesores" as VerificarConflictos
+usecase "Consultar Calendario Generado" as ConsultarCalendario
+usecase "Exportar o Publicar Calendario" as ExportarCalendario
+usecase "Exportar Datos" as ExportarDatos
+
+Usuario --> ExportarDatos
+Usuario --> GenerarCalendario
+Usuario --> VerificarConflictos
+Usuario --> ConsultarCalendario
+Usuario --> ExportarCalendario
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml CdU_Profesor
+left to right direction
+
+actor Profesor
+
+package "Consultas de Exámenes" {
+    usecase "Comunicar Incidencias de Horario" as ComunicarIncidencias
+    usecase "Ver Calendario de Exámenes" as VerCalendario
+}
+
+Profesor --> ComunicarIncidencias
+Profesor --> VerCalendario
+
+@enduml
