@@ -1,0 +1,63 @@
+@startuml
+
+object Universidad {
+  nombre = "Uneatlantico"
+}
+
+object Facultad {
+  nombre = "Politécnica superior"
+}
+
+object Grado {
+  nombre = "3º grado"
+}
+
+object Asignatura {
+  nombre = "Ingeniería de Software"
+  codigo = "IDSW1"
+}
+
+object Examen{
+  asignatura = "Ingeniería de Software"
+  tipo = "Final"
+  fecha = "2025-06-10"
+}
+
+object Profesor {
+  nombre = "Manuel Masías"
+}
+
+object FranjaHoraria{
+  descripcion = "08:30 - 10:30"
+}
+
+object Aula1 {
+  codigo = "Aula -2.6"
+  capacidad = 50
+}
+
+object Aula2 {
+  codigo = "Aula -2.7"
+  capacidad = 40
+}
+
+object Alumno {
+  cantidadAlumno = 50
+}
+
+Universidad --> Facultad
+Facultad --> Grado
+Grado --> Asignatura
+
+Asignatura --> Profesor : impartida por
+Alumno --> Asignatura : inscritos en 
+Asignatura --> Examen   : evalúa mediante
+
+Examen --> FranjaHoraria : programado en
+Examen --> Profesor      : supervisado por
+Examen --> Alumno        : presentado por
+
+Examen --> Aula1 : se realiza en
+Examen --> Aula2 : se realiza en
+
+@enduml
