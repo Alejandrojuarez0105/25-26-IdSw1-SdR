@@ -1,0 +1,100 @@
+@startuml
+
+object Universidad {
+nombre = "Uneatlantico"
+}
+
+object Facultad {
+nombre = "Politécnica superior"
+}
+
+object Grado {
+nombre = "3º grado"
+}
+
+object Asignatura {
+nombre = "Ingeniería de Software"
+codigo = "IDSW1"
+}
+
+object Asignatura2 {
+nombre = "Bases de Datos"
+codigo = "BBDD2"
+}
+
+object Examen{
+asignatura = "Ingeniería de Software"
+tipo = "Final"
+fecha = "2025-06-10"
+}
+
+object Examen2{
+asignatura = "Sistemas Distribuidos"
+tipo = "Parcial"
+fecha = "2025-05-20"
+}
+
+object Profesor {
+nombre = "Manuel Masías"
+}
+
+object Profesor2 {
+nombre = "Daniel Iglesias"
+}
+
+object FranjaHoraria{
+descripcion = "08:30 - 10:30"
+}
+
+object FranjaHoraria2{
+descripcion = "11:30 - 13:30"
+}
+
+object Aula1 {
+codigo = "Aula -2.6"
+capacidad = 50
+}
+
+object Aula2 {
+codigo = "Aula -2.7"
+capacidad = 40
+}
+
+object Aula3 {
+codigo = "Aula 1.7"
+capacidad = 35
+}
+
+object Alumno {
+cantidadAlumno = 50
+}
+
+object Alumno2 {
+cantidadAlumno = 35
+}
+
+Universidad --> Facultad
+Facultad --> Grado
+Grado --> Asignatura
+Grado --> Asignatura2
+
+Asignatura --> Profesor : impartida por
+Alumno --> Asignatura : inscritos en
+Asignatura --> Examen   : evalúa mediante
+
+Asignatura2 --> Profesor2 : impartida por
+Alumno2 --> Asignatura2 : inscritos en
+Asignatura2 --> Examen2   : evalúa mediante
+
+Examen --> FranjaHoraria : programado en
+Examen --> Profesor      : supervisado por
+Examen --> Alumno        : presentado por
+Examen --> Aula1 : se realiza en
+Examen --> Aula2 : se realiza en
+
+Examen2 --> FranjaHoraria2 : programado en
+Examen2 --> Profesor2      : supervisado por
+Examen2 --> Alumno2        : presentado por
+Examen2 --> Aula3 : se realiza en
+
+@enduml
