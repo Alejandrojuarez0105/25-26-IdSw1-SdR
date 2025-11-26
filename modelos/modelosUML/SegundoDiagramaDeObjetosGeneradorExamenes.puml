@@ -18,20 +18,20 @@ codigo = "IDSW1"
 }
 
 object Asignatura2 {
-nombre = "Bases de Datos"
-codigo = "BBDD2"
+nombre = "Sistemas Distribuidos"
+codigo = "SSDB"
 }
 
 object Examen{
 asignatura = "Ingeniería de Software"
 tipo = "Final"
-fecha = "2025-06-10"
+fecha = "2026-01-14"
 }
 
 object Examen2{
 asignatura = "Sistemas Distribuidos"
 tipo = "Parcial"
-fecha = "2025-05-20"
+fecha = "2025-10-10"
 }
 
 object Profesor {
@@ -56,7 +56,7 @@ capacidad = 50
 }
 
 object Aula2 {
-codigo = "Aula -2.7"
+codigo = "Aula -2.4"
 capacidad = 40
 }
 
