@@ -20,7 +20,7 @@ object Asignatura {
 object Examen{
   asignatura = "Ingeniería de Software"
   tipo = "Final"
-  fecha = "2025-06-10"
+  fecha = "2026-01-16"
 }
 
 object Profesor {
@@ -28,17 +28,12 @@ object Profesor {
 }
 
 object FranjaHoraria{
-  descripcion = "08:30 - 10:30"
+  descripcion = "11:30 - 13:30"
 }
 
-object Aula1 {
+object Aula {
   codigo = "Aula -2.6"
   capacidad = 50
-}
-
-object Aula2 {
-  codigo = "Aula -2.7"
-  capacidad = 40
 }
 
 object Alumno {
@@ -57,7 +52,6 @@ Examen --> FranjaHoraria : programado en
 Examen --> Profesor      : supervisado por
 Examen --> Alumno        : presentado por
 
-Examen --> Aula1 : se realiza en
-Examen --> Aula2 : se realiza en
+Examen --> Aula : se realiza en
 
 @enduml

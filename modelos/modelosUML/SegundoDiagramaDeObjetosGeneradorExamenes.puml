@@ -25,13 +25,13 @@ codigo = "SSDB"
 object Examen{
 asignatura = "Ingeniería de Software"
 tipo = "Final"
-fecha = "2026-01-14"
+fecha = "2026-01-16"
 }
 
 object Examen2{
 asignatura = "Sistemas Distribuidos"
-tipo = "Parcial"
-fecha = "2025-10-10"
+tipo = "Final"
+fecha = "2026-01-12"
 }
 
 object Profesor {
@@ -43,11 +43,11 @@ nombre = "Daniel Iglesias"
 }
 
 object FranjaHoraria{
-descripcion = "08:30 - 10:30"
+descripcion = "11:30 - 13:30"
 }
 
 object FranjaHoraria2{
-descripcion = "11:30 - 13:30"
+descripcion = "08:30 - 10:30"
 }
 
 object Aula1 {
@@ -61,7 +61,7 @@ capacidad = 40
 }
 
 object Aula3 {
-codigo = "Aula 1.7"
+codigo = "Aula -2.2"
 capacidad = 35
 }
 
@@ -70,7 +70,7 @@ cantidadAlumno = 50
 }
 
 object Alumno2 {
-cantidadAlumno = 35
+cantidadAlumno = 45
 }
 
 Universidad --> Facultad
@@ -90,7 +90,7 @@ Examen --> FranjaHoraria : programado en
 Examen --> Profesor      : supervisado por
 Examen --> Alumno        : presentado por
 Examen --> Aula1 : se realiza en
-Examen --> Aula2 : se realiza en
+Examen2 --> Aula2 : se realiza en
 
 Examen2 --> FranjaHoraria2 : programado en
 Examen2 --> Profesor2      : supervisado por
