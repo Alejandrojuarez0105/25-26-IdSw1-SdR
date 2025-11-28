@@ -2,7 +2,7 @@
 
 [*] --> SinAsignar
 
-SinAsignar --> Asignado : iniciarAsignación()
+SinAsignar --> Asignado : realizarAsignación()
 
 Asignado --> [*]
 
