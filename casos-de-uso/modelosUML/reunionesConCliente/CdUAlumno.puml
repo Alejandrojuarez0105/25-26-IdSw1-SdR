@@ -1,9 +1,0 @@
-@startuml CdU_Alumno
-left to right direction
-
-actor Alumno
-usecase "Ver Calendario de Exámenes" as VerCalendario
-
-Alumno --> VerCalendario
-
-@enduml
