@@ -1,20 +1,36 @@
 # Modelo del dominio
 
-En este apartado se encuentran los elementos que conforman el **modelo del dominio** del proyecto. Incluye:
+## Diagramas
 
-- Diagrama de clases del generador de fechas de exámenes para la gestión académica universitaria.
-- Diagrama de objetos del generador.
-- Diagrama de objetos extenso (para verificación de relaciones y consistencia).
-- Diagrama de estados de un examen.
-- Diagrama de estados del generador de exámenes.
+<div align=center>
+	
+|![](/modelos/images/DiagramaDeClasesGeneradorExamenes.png)
+|:-:
+|[Código fuente]()
 
-## Tabla de diagramas
+</div>
 
-|      [Diagrama de clases](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/DiagramaDeClasesGeneradorExamenes.png)       |      [Diagrama de objetos](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/DiagramaDeObjetosGeneradorExamenes.png)      | [Diagrama de objetos - extenso](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/SegundoDiagramaDeObjetosGeneradorExamenes.png) | [Diagrama de estados de un examen](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/DiagramaDeEstadosDeUnExamen.png) | [Diagrama de estados del generador](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/DiagramaDeEstadosGeneradorExamenes.png) |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/DiagramaDeClasesGeneradorExamenes.png?raw=true" width="250"> | <img src="https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/DiagramaDeObjetosGeneradorExamenes.png?raw=true" width="250"> | <img src="https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/SegundoDiagramaDeObjetosGeneradorExamenes.png?raw=true" width="250"> |  <img src="https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/DiagramaDeEstadosDeUnExamen.png?raw=true" width="250">   |   <img src="https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/images/DiagramaDeEstadosGeneradorExamenes.png?raw=true" width="250">   |
+### Diagrama de objetos
 
----
+<div align=center>
+
+|![](/modelos/images/DiagramaDeObjetosGeneradorExamenes.png)|![](/modelos/images/SegundoDiagramaDeObjetosGeneradorExamenes.png)|
+|:-:|:-:|
+|[Código fuente]()|[Código fuente]()
+
+</div>
+
+### Estados
+
+<div align=center>
+
+|Examen|Generador de exámenes|
+|:-:|:-:|
+|![](/modelos/images/DiagramaDeEstadosDeUnExamen.png)|![](/modelos/images/DiagramaDeEstadosGeneradorExamenes.png)|
+|[Código fuente]()|[Código fuente]()
+
+</div>
+
 
 ### Idea principal
 
