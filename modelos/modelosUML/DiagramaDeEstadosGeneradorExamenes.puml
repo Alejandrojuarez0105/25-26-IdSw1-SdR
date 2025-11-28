@@ -1,9 +1,14 @@
 @startuml
 
-[*] --> SinAsignar
+[*] --> PendienteDeAsignar
 
-SinAsignar --> Asignado : iniciarAsignación()
+PendienteDeAsignar --> Asignando : iniciarAsignación()
 
-Asignado --> [*]
+Asignando --> PendienteDeRevisión : fechasGeneradas()
+
+PendienteDeRevisión --> Asignando : solicitarCorrección()
+PendienteDeRevisión --> Finalizado : aprobarAsignación()
+
+Finalizado --> [*]
 
 @enduml

@@ -73,3 +73,5 @@ El **Sistema Generador** es un componente automatizado que recopila información
 - Emitir advertencias de conflictos
 - Generar calendario final
 - Publicar calendario
+
+En este [apartado](https://chatgpt.com/share/6929892a-b424-8012-8e24-990222fd626a) de ChatGPT me ha ayudado a verificar el actor Usuario y sus casos de uso, en el mismo me ayuda a plantear el diagrama de estados del generador de exámenes y el actor Profesor y corregir sus casos de uso

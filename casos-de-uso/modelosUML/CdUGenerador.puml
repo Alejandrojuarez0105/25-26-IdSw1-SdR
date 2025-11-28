@@ -1,0 +1,32 @@
+@startuml CdU_Generador
+left to right direction
+
+actor "Generador Automático" as Generador
+
+package "Generación de Exámenes" {
+    usecase "Procesar Solicitud de Generación" as ProcesarGeneracion
+    usecase "Generar Fechas de Exámenes" as GenerarFechas
+    usecase "Revisar Posibles Conflictos" as RevisarConflictos
+    usecase "Aplicar Correcciones Solicitadas" as AplicarCorrecciones
+    usecase "Finalizar Asignación de Exámenes" as FinalizarAsignacion
+}
+
+Generador --> ProcesarGeneracion
+Generador --> GenerarFechas
+Generador --> RevisarConflictos
+Generador --> AplicarCorrecciones
+Generador --> FinalizarAsignacion
+
+ProcesarGeneracion --> GenerarFechas : <<include>>
+GenerarFechas --> RevisarConflictos : <<include>>
+RevisarConflictos --> FinalizarAsignacion : <<extend>>
+AplicarCorrecciones --> GenerarFechas : <<extend>>
+
+' Como funciona:
+' Se basa en los estados del generador (PendienteDeAsignar, Asignando, PendienteDeRevisión, Finalizado)
+' iniciarAsignación() -> CdU: Procesar Solicitud de Generación / Generar Fechas de Exámenes.
+' fechasGeneradas() -> CdU: Revisar Posibles Conflictos.
+' solicitarCorrección() -> CdU: Aplicar Correcciones Solicitadas.
+' aprobarAsignación() -> CdU: Finalizar Asignación.
+
+@enduml

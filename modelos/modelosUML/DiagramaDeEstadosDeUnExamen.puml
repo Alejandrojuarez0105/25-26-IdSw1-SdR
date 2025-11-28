@@ -1,0 +1,9 @@
+@startuml
+
+[*] --> SinAsignar
+
+SinAsignar --> Asignado : iniciarAsignación()
+
+Asignado --> [*]
+
+@enduml
