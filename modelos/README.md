@@ -6,7 +6,7 @@
 	
 |![](/modelos/images/DiagramaDeClasesGeneradorExamenes.png)
 |:-:
-|[Código fuente](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/modelosUML/DiagramaDeClasesGeneradorExamenes.puml)
+|[Código fuente](/modelos/modelosUML/DiagramaDeClasesGeneradorExamenes.puml)
 
 </div>
 
@@ -14,20 +14,19 @@
 
 <div align=center>
 
-|                                               ![](/modelos/images/DiagramaDeObjetosGeneradorExamenes.png)                                               |                                               ![](/modelos/images/SegundoDiagramaDeObjetosGeneradorExamenes.png)                                               |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [Código fuente](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/modelosUML/DiagramaDeObjetosGeneradorExamenes.puml) | [Código fuente](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/modelosUML/SegundoDiagramaDeObjetosGeneradorExamenes.puml) |
+|![](/modelos/images/DiagramaDeObjetosGeneradorExamenes.png)|![](/modelos/images/SegundoDiagramaDeObjetosGeneradorExamenes.png)|
+|:---:|:---:|
+|[Código fuente](/modelos/modelosUML/DiagramaDeObjetosGeneradorExamenes.puml)|[Código fuente](/modelos/modelosUML/SegundoDiagramaDeObjetosGeneradorExamenes.puml)|
 
 </div>
 
-### Estados
+### Diagramas de estados
 
 <div align=center>
 
-|                                                                      Examen                                                                      |                                                                     Generador de exámenes                                                                      |
-| :----------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                               ![](/modelos/images/DiagramaDeEstadosDeUnExamen.png)                                               |                                                  ![](/modelos/images/DiagramaDeEstadosGeneradorExamenes.png)                                                   |
-| [Código fuente](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/modelosUML/DiagramaDeEstadosDeUnExamen.puml) | [Código fuente](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/modelosUML/SegundoDiagramaDeObjetosGeneradorExamenes.puml) |
+|![](/modelos/images/DiagramaDeEstadosDeUnExamen.png)|![](/modelos/images/DiagramaDeEstadosGeneradorExamenes.png)|
+|:---:|:---:|
+|[Código fuente](/modelos/modelosUML/DiagramaDeEstadosDeUnExamen.puml)|[Código fuente](/modelos/modelosUML/SegundoDiagramaDeObjetosGeneradorExamenes.puml)|
 
 </div>
 
