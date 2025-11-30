@@ -7,9 +7,9 @@ usecase "Generar Calendario de Exámenes" as GenerarCalendario
 usecase "Verificar Conflictos de Exámenes Con Incidencias de Profesores" as VerificarConflictos
 usecase "Consultar Calendario Generado" as ConsultarCalendario
 usecase "Exportar o Publicar Calendario" as ExportarCalendario
-usecase "Exportar Datos" as ExportarDatos
+usecase "Importar Datos" as ImportarDatos
 
-Usuario --> ExportarDatos
+Usuario --> ImportarDatos
 Usuario --> GenerarCalendario
 Usuario --> VerificarConflictos
 Usuario --> ConsultarCalendario

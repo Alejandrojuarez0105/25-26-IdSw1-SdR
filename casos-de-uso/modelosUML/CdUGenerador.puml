@@ -22,11 +22,4 @@ GenerarFechas --> RevisarConflictos : <<include>>
 RevisarConflictos --> FinalizarAsignacion : <<extend>>
 AplicarCorrecciones --> GenerarFechas : <<extend>>
 
-' Como funciona:
-' Se basa en los estados del generador (PendienteDeAsignar, Asignando, PendienteDeRevisión, Finalizado)
-' iniciarAsignación() -> CdU: Procesar Solicitud de Generación / Generar Fechas de Exámenes.
-' fechasGeneradas() -> CdU: Revisar Posibles Conflictos.
-' solicitarCorrección() -> CdU: Aplicar Correcciones Solicitadas.
-' aprobarAsignación() -> CdU: Finalizar Asignación.
-
 @enduml
