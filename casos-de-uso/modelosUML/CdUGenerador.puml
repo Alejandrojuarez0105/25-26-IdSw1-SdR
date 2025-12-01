@@ -1,7 +1,7 @@
 @startuml CdU_Generador
 left to right direction
 
-actor "Generador Automático" as Generador
+actor "Generador" as Generador
 
 package "Generación de Exámenes" {
     usecase "Procesar Solicitud de Generación" as ProcesarGeneracion

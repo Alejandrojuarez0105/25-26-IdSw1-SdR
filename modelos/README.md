@@ -4,7 +4,7 @@
 
 <div align=center>
 	
-|![](/modelos/images/DiagramaDeClasesGeneradorExamenes.png)
+|![](/modelos/images/DiagramaDeClasesGeneradorExamenes.svg)
 |:-:
 |[Código fuente](/modelos/modelosUML/DiagramaDeClasesGeneradorExamenes.puml)
 
@@ -14,9 +14,9 @@
 
 <div align=center>
 
-|![](/modelos/images/DiagramaDeObjetosGeneradorExamenes.png)|![](/modelos/images/SegundoDiagramaDeObjetosGeneradorExamenes.png)|
-|:---:|:---:|
-|[Código fuente](/modelos/modelosUML/DiagramaDeObjetosGeneradorExamenes.puml)|[Código fuente](/modelos/modelosUML/SegundoDiagramaDeObjetosGeneradorExamenes.puml)|
+|         ![](/modelos/images/DiagramaDeObjetosGeneradorExamenes.svg)          |         ![](/modelos/images/SegundoDiagramaDeObjetosGeneradorExamenes.svg)          |
+| :--------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| [Código fuente](/modelos/modelosUML/DiagramaDeObjetosGeneradorExamenes.puml) | [Código fuente](/modelos/modelosUML/SegundoDiagramaDeObjetosGeneradorExamenes.puml) |
 
 </div>
 
@@ -24,9 +24,9 @@
 
 <div align=center>
 
-|![](/modelos/images/DiagramaDeEstadosDeUnExamen.png)|![](/modelos/images/DiagramaDeEstadosGeneradorExamenes.png)|
-|:---:|:---:|
-|[Código fuente](/modelos/modelosUML/DiagramaDeEstadosDeUnExamen.puml)|[Código fuente](/modelos/modelosUML/SegundoDiagramaDeObjetosGeneradorExamenes.puml)|
+|         ![](/modelos/images/DiagramaDeEstadosDeUnExamen.svg)          |             ![](/modelos/images/DiagramaDeEstadosGeneradorExamenes.svg)             |
+| :-------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| [Código fuente](/modelos/modelosUML/DiagramaDeEstadosDeUnExamen.puml) | [Código fuente](/modelos/modelosUML/SegundoDiagramaDeObjetosGeneradorExamenes.puml) |
 
 </div>
 

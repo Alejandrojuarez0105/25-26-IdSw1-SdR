@@ -8,13 +8,13 @@ Se incluyen los siguientes componentes principales:
 
 ## Contenido del Repositorio
 
-- [Modelo del Dominio](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/modelos/README.md)  
+- [Modelo del Dominio](/modelos/README.md)  
   Contiene los diagramas de clases, objetos y estados del sistema, junto con la descripción de la idea principal y los objetivos del generador de exámenes.
 
-- [Casos de Uso](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/casos-de-uso/README.md)  
+- [Casos de Uso](/casos-de-uso/README.md)  
   Incluye los casos de uso de cada actor del sistema (Alumno, Profesor, Usuario, Generador) con sus relaciones, diagramas resumidos y enlaces a las imágenes de cada caso de uso.
 
-- [Interacciones con el Catedrático y Cliente](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/tree/juarezAlejandro/interaccionesClienteYCatedratico)  
+- [Interacciones con el Catedrático y Cliente](/interaccionesClienteYCatedratico)  
   Repositorio de conversaciones, correcciones y recomendaciones recibidas tanto del cliente como del catedrático, incluyendo reuniones y seguimiento de avances.
 
 ---

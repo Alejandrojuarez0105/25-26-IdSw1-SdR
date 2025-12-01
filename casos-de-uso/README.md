@@ -4,7 +4,7 @@
 
 **Generador**
 
-|![](/casos-de-uso/images/CdUGenerador.png)
+|![](/casos-de-uso/images/CdUGenerador.svg)
 |:-:
 |[Código fuente](/casos-de-uso/modelosUML/CdUGenerador.puml)
 
@@ -16,7 +16,7 @@
 
 **Usuario**
 
-|![](/casos-de-uso/images/CdUUsuario.png)
+|![](/casos-de-uso/images/CdUUsuario.svg)
 |:-:
 |[Código fuente](/casos-de-uso/modelosUML/CdUUsuario.puml)
 
@@ -28,7 +28,7 @@
 
 **Profesor**
 
-|![](/casos-de-uso/images/CdUProfesor.png)
+|![](/casos-de-uso/images/CdUProfesor.svg)
 |:-:
 |[Código fuente](/casos-de-uso/modelosUML/CdUProfesor.puml)
 
@@ -40,7 +40,7 @@
 
 **Alumno**
 
-|![](/casos-de-uso/images/CdUAlumno.png)
+|![](/casos-de-uso/images/CdUAlumno.svg)
 |:-:
 |[Código fuente](/casos-de-uso/modelosUML/CdUAlumno.puml)
 
