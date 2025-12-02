@@ -15,6 +15,8 @@ state "EXPORTAR_CALENDARIO" as ExportarCalendario
 state "VER_INCIDENCIAS" as VerIncidencias
 state "IMPORTAR_DATOS" as ImportarDatos
 state "ASIGNACION_EXAMENES" as AsignacionExamenes
+state "PUBLICAR_CALENDARIO" as PublicarCalendario
+state "DESCARGAR_CALENDARIO" as DescargarCalendario
 
 [*] --> NoAuth
 
@@ -31,13 +33,19 @@ CalendarioGenerado --> RevisarCalendario: [USUARIO, GENERADOR] revisarConflictos
 RevisarCalendario --> CalendarioGenerado : [USUARIO, GENERADOR] aplicarCorrecciones()
 RevisarCalendario --> AsignacionExamenes : [USUARIO, GENERADOR] finalizarAsignacion()
 
+AsignacionExamenes --> PublicarCalendario : [USUARIO] publicarCalendario()
+PublicarCalendario --> Menu : [USUARIO] completarPublicacion()
+
 AsignacionExamenes --> Menu : [USUARIO] completarAsignacion()
 
 Menu --> ConsultarCalendario: [USUARIO, PROFESOR, ALUMNO] consultarCalendario()
-Menu --> ExportarCalendario: [USUARIO, PROFESOR, ALUMNO] exportarCalendario()
+Menu --> ExportarCalendario: [USUARIO] exportarCalendario()
+
+ConsultarCalendario --> DescargarCalendario : [USUARIO, PROFESOR, ALUMNO] descargarCalendario()
+DescargarCalendario --> ConsultarCalendario : [TODOS] volverAConsulta()
 
 ConsultarCalendario --> Menu : [TODOS] completarConsulta()
-ExportarCalendario --> Menu : [TODOS] completarExportacion()
+ExportarCalendario --> Menu : [USUARIO, GENERADOR] completarExportacion()
 
 Menu --> VerIncidencias: [PROFESOR] comunicarIncidencias()
 VerIncidencias --> Menu : [PROFESOR] completarComunicacionIncidencias()
