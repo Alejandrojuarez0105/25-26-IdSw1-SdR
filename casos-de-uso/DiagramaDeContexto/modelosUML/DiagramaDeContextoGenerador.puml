@@ -1,0 +1,50 @@
+@startuml diagrama-contexto-gestion-examenes
+
+left to right direction
+skinparam linetype polyline
+
+state "SESION_CERRADA" as NoAuth
+state "SISTEMA_DISPONIBLE" as Menu
+
+state "GENERAR_CALENDARIO" as GenerarCalendario
+state "GENERANDO_EXAMENES" as GenerandoExamenes
+state "CALENDARIO_GENERADO" as CalendarioGenerado
+state "REVISAR_CALENDARIO" as RevisarCalendario
+state "CONSULTAR_CALENDARIO" as ConsultarCalendario
+state "EXPORTAR_CALENDARIO" as ExportarCalendario
+state "VER_INCIDENCIAS" as VerIncidencias
+state "IMPORTAR_DATOS" as ImportarDatos
+state "ASIGNACION_EXAMENES" as AsignacionExamenes
+
+[*] --> NoAuth
+
+NoAuth --> Menu : iniciarSesion()
+Menu --> NoAuth : cerrarSesion()
+Menu --> ImportarDatos: importarDatos()
+Menu --> GenerarCalendario: generarCalendario()
+
+ImportarDatos --> Menu : completarImportacion()
+
+GenerarCalendario --> GenerandoExamenes: procesarGeneracion()
+GenerandoExamenes --> CalendarioGenerado: generarFechasExamenes()
+CalendarioGenerado --> RevisarCalendario: revisarConflictos()
+RevisarCalendario --> CalendarioGenerado : aplicarCorrecciones()
+RevisarCalendario --> AsignacionExamenes : finalizarAsignacion()
+
+AsignacionExamenes --> Menu : completarAsignacion()
+
+Menu --> ConsultarCalendario: consultarCalendario()
+Menu --> ExportarCalendario: exportarCalendario()
+
+ConsultarCalendario --> Menu : completarConsulta()
+ExportarCalendario --> Menu : completarExportacion()
+
+Menu --> VerIncidencias: comunicarIncidencias()
+VerIncidencias --> Menu : completarComunicacionIncidencias()
+
+CalendarioGenerado --> GenerandoExamenes : solicitarCorreccion()
+GenerandoExamenes --> Menu : cancelarGeneracion()
+CalendarioGenerado --> Menu : cancelarRevision()
+RevisarCalendario --> Menu : cancelarRevisión()
+
+@enduml

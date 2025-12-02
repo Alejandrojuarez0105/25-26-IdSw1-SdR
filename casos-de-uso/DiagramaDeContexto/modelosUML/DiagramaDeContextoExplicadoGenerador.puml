@@ -1,0 +1,50 @@
+@startuml diagrama-contexto-gestion-examenes
+
+left to right direction
+skinparam linetype polyline
+
+state "SESION_CERRADA" as NoAuth
+state "SISTEMA_DISPONIBLE" as Menu
+
+state "GENERAR_CALENDARIO" as GenerarCalendario
+state "GENERANDO_EXAMENES" as GenerandoExamenes
+state "CALENDARIO_GENERADO" as CalendarioGenerado
+state "REVISAR_CALENDARIO" as RevisarCalendario
+state "CONSULTAR_CALENDARIO" as ConsultarCalendario
+state "EXPORTAR_CALENDARIO" as ExportarCalendario
+state "VER_INCIDENCIAS" as VerIncidencias
+state "IMPORTAR_DATOS" as ImportarDatos
+state "ASIGNACION_EXAMENES" as AsignacionExamenes
+
+[*] --> NoAuth
+
+NoAuth --> Menu : [USUARIO, PROFESOR, ALUMNO] iniciarSesion()
+Menu --> NoAuth : [TODOS] cerrarSesion()
+Menu --> ImportarDatos: [USUARIO] importarDatos()
+Menu --> GenerarCalendario: [USUARIO] generarCalendario()
+
+ImportarDatos --> Menu : [USUARIO] completarImportacion()
+
+GenerarCalendario --> GenerandoExamenes: [GENERADOR] procesarGeneracion()
+GenerandoExamenes --> CalendarioGenerado: [GENERADOR] generarFechasExamenes()
+CalendarioGenerado --> RevisarCalendario: [USUARIO, GENERADOR] revisarConflictos()
+RevisarCalendario --> CalendarioGenerado : [USUARIO, GENERADOR] aplicarCorrecciones()
+RevisarCalendario --> AsignacionExamenes : [USUARIO, GENERADOR] finalizarAsignacion()
+
+AsignacionExamenes --> Menu : [USUARIO] completarAsignacion()
+
+Menu --> ConsultarCalendario: [USUARIO, PROFESOR, ALUMNO] consultarCalendario()
+Menu --> ExportarCalendario: [USUARIO, PROFESOR, ALUMNO] exportarCalendario()
+
+ConsultarCalendario --> Menu : [TODOS] completarConsulta()
+ExportarCalendario --> Menu : [TODOS] completarExportacion()
+
+Menu --> VerIncidencias: [PROFESOR] comunicarIncidencias()
+VerIncidencias --> Menu : [PROFESOR] completarComunicacionIncidencias()
+
+CalendarioGenerado --> GenerandoExamenes : [USUARIO] solicitarCorreccion()
+GenerandoExamenes --> Menu : [USUARIO] cancelarGeneracion()
+CalendarioGenerado --> Menu : [USUARIO] cancelarRevision()
+RevisarCalendario --> Menu : [USUARIO] cancelarRevisión()
+
+@enduml
