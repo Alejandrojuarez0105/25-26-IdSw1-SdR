@@ -15,7 +15,10 @@ Se incluyen los siguientes componentes principales:
   Incluye los casos de uso de cada actor del sistema (Alumno, Profesor, Usuario, Generador) con sus relaciones, diagramas resumidos y enlaces a las imágenes de cada caso de uso.
 
 - [Interacciones con el Catedrático y Cliente](/interaccionesClienteYCatedratico)  
-  Repositorio de conversaciones, correcciones y recomendaciones recibidas tanto del cliente como del catedrático, incluyendo reuniones y seguimiento de avances.
+  Incluye las conversaciones, correcciones y recomendaciones recibidas tanto del cliente como del catedrático, incluyendo reuniones y seguimiento de avances.
+
+- [Diagrama de contexto](/casos-de-uso/DiagramaDeContexto/)
+  Tiene una línea la cual es posible seguir al momento de la creación del proyecto
 
 ---
 
