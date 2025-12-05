@@ -25,6 +25,7 @@
 El **Sistema de Generación Automática de Exámenes** es una solución desarrollada para la Universidad Europea del Atlántico que automatiza la planificación y asignación de fechas, horarios y aulas para los exámenes finales. El sistema elimina conflictos de horarios y optimiza el uso de los recursos disponibles.
 
 Este proyecto forma parte de la asignatura **Ingeniería del Software I** y constituye un caso real de desarrollo de software con aplicación práctica en la gestión académica universitaria.
+
 [Ver Contenidos](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/juarezAlejandro/README.md)
 ---
 
