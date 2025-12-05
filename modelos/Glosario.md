@@ -21,7 +21,7 @@
 
 ---
 
-## 6. Referencias Cruzadas
+##  Referencias Cruzadas
 
 *Relación entre los distintos términos del glosario para entender cómo se conectan entre sí.*
 
