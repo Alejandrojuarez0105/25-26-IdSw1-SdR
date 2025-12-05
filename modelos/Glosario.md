@@ -21,7 +21,21 @@
 
 ---
 
+## 6. Referencias Cruzadas
 
+*Relación entre los distintos términos del glosario para entender cómo se conectan entre sí.*
+
+* **Aula ↔ Alumno (Capacidad):**
+    El término **Aula** está directamente relacionado con **Alumno**. Para asignar un aula, debemos consultar la `cantidad de alumnos` inscritos y compararla con la `capacidad` del aula.
+
+* **Examen ↔ Profesor (Supervisión):**
+    Todo **Examen** requiere obligatoriamente la referencia a un **Profesor**. No puede existir un examen planificado sin un responsable asignado para supervisarlo.
+
+* **Examen ↔ Franja Horaria (Planificación):**
+    Un **Examen** no está completo si no tiene vinculada una **Franja Horaria**. 
+
+* **Examen ↔ Aula (Ubicación):**
+    Del mismo modo, un **Examen** debe hacer referencia a un **Aula**. Si el examen cambia de fecha, es probable que también deba cambiar de aula.
 
 
 
