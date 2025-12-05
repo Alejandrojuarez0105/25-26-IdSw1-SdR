@@ -1,0 +1,28 @@
+@startuml
+
+class Universidad
+class Facultad
+class Grado
+class Asignatura
+class Examen
+class Profesor
+class FranjaHoraria
+class Aula
+class Alumno
+
+Universidad *-- Facultad
+Facultad *-- Grado
+Grado *-- Asignatura
+Asignatura *-- Examen
+
+' Relaciones de Asignatura
+Asignatura *--> Profesor : tiene responsable
+Asignatura *--> Alumno : tiene matriculados
+
+' Relaciones de Examen
+Examen --> Profesor : supervisado por
+Examen --> FranjaHoraria
+Examen "1" --> "*" Aula : se realiza en
+Examen *--> Alumno : realizado por
+
+@enduml
