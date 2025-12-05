@@ -7,6 +7,7 @@
 [![](https://img.shields.io/badge/-Diagrama_de_Clases-FFF?style=flat&logo=uml&logoColor=black)](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/veneroFrancisco/modelos/images/primeraReunionConCliente/DiagramaClasesGeneradorExamenes.png)
 [![](https://img.shields.io/badge/-Documentación-FFF?style=flat&logo=bookstack&logoColor=black)](/documents)
 [![](https://img.shields.io/badge/-Issues-FFF?style=flat&logo=github&logoColor=black)](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/issues)
+[![](https://img.shields.io/badge/-Glosario-FFF?style=flat&logo=github&logoColor=black)](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR/blob/veneroFrancisco/modelos/Glosario.md)
 
 </div>
 
